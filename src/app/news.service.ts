@@ -12,7 +12,7 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  getFeed(): Observable<any> {
+  getPopular(): Observable<any> {
     return this.http.get<any>(this.url);
   }
 
