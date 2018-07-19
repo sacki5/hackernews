@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700');
+
+
 body {
     background-color: #ebe9e6;
+    font-family: 'Catamaran', Helvetica, sans-serif;
+}
+
+.btn-primary, .page-item.active .page-link {
+    background-color:#ff6600;
+    border-color: #ff6600;
+}
+
+.page-link {
+    color:#ff6600;
+}
+
+.page-link:hover {
+    color:#c55002;
+    background-color: #eff0f3;
+}
+
+.btn-primary:hover {
+    background-color:#dd5800;
+    border-color:#dd5800;
+}
+
+ul.pagination {
+    margin-bottom:0;
+}
+
+.form-inline {
+    flex-flow: row;
 }

@@ -1,27 +1,22 @@
+<nav class="navbar navbar-light mt-3 mb-1 pt-2 p-0">
+  <div class="container">
+    <form (ngSubmit)="search(searchForm.form)" #searchForm="ngForm" class="form-inline mb-1">  
+      <input [ngModel] name="query" type="text" class="form-control mr-2" placeholder="search ...">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    
+    <span class="ml-auto mr-2">{{collectionSize}} records</span> 
+    <ngb-pagination class="mb-1" [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" aria-label="Default pagination" (pageChange)="getNews()"></ngb-pagination>
+  </div>  
+</nav>
+
 <div class="container">
-
-  <!-- <div class="card bg-light mb-3" *ngFor="let article of articles">
-    <div class="card-header">
-      82pts
-    </div>
+  <div class="card bg-light mb-3" *ngFor="let article of articles">
+    <div class="marker"></div>
     <div class="card-body">
-      <a href="{{article.url}}">{{article.title}}</a>
-      <p class="card-text">by {{article.author}} | {{ timeSince(article.publishedAt) }} </p>
-    </div>
-  </div> -->
-
-  <div class="card-group">
-    <div class="col-3" *ngFor="let article of articles">
-      <div class="card mb-2">
-        <img class="card-img-top" src="{{article.urlToImage}}" alt="Card image cap">
-        <div class="card-body">
-          <a href="{{article.url}}" target="_blank"><h5 class="card-title">{{article.title}}</h5></a>
-          <!-- <p class="card-text">{{article.description}}</p> -->
-          <a href="{{article.url}}" target="_blank" class="btn btn-primary">Read</a>
-        </div>
-      </div>
+      <a href="{{article.url}}" target="_blank"><h5 class="card-title">{{article.title}}</h5></a>
+      <p class="card-text"><span *ngIf="article.author">Author: {{article.author}} | </span>{{ timeSince(article.publishedAt) }} </p>
     </div>
   </div>
-
-
 </div>

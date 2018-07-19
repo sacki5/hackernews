@@ -6,3 +6,24 @@
     width:83px;
     border:none;
 } */
+
+
+.card:hover .marker {
+    width:5px;
+}
+.marker {
+    transition:.3s;
+    width:0;
+    height:100%;
+    background:#ff6600;
+    position: absolute;
+}
+
+a h5 {
+    color:#4f4f4f;
+}
+
+a:hover , a:hover h5 {
+    color:#ff6600;
+    text-decoration: none;
+}
