@@ -1,0 +1,14 @@
+<div class="container">
+
+  <div class="card bg-light mb-2" *ngFor="let article of articles">
+    <div class="card-header">
+      82pts
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{article.title}}</h5>
+      <p class="card-text">by {{article.author}} ago {{ timeSince(article.publishedAt) }}</p>
+    </div>
+  </div>
+
+
+</div>
