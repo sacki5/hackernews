@@ -20,3 +20,9 @@
     </div>
   </div>
 </div>
+
+<nav class="navbar mb-1 ´p-0">
+  <div class="container">
+    <ngb-pagination class="mb-1 ml-auto" [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" aria-label="Default pagination" (pageChange)="getNews()"></ngb-pagination>
+  </div>  
+</nav>

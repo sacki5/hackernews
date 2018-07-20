@@ -34,3 +34,34 @@ ul.pagination {
 .form-inline {
     flex-flow: row;
 }
+
+#up {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position:fixed;
+    right:50px;
+    bottom: 50px;
+    background: #ff6600;
+    color: white;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.247);
+    transition: .2s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#up:hover {
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.347);
+}
+
+#up:active {
+    box-shadow: none;
+}
+
+#up .fas {
+    font-size:30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+}

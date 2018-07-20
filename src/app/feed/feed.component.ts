@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class FeedComponent implements OnInit {
   articles;
-  pageSize = 10;
+  pageSize = 15;
   page = 1;
   public query = '';
   collectionSize;

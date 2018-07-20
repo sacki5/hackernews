@@ -12,4 +12,4 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/dist/hackernews/index.html'));
 });
 
-console.log('Sever up on port');
+console.log('Sever up');
