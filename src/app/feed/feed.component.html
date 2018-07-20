@@ -16,7 +16,7 @@
     <div class="marker"></div>
     <div class="card-body">
       <a href="{{article.url}}" target="_blank"><h5 class="card-title">{{article.title}}</h5></a>
-      <p class="card-text"><span *ngIf="article.author">Author: {{article.author}} | </span>{{ timeSince(article.publishedAt) }} </p>
+      <p class="card-text"><span *ngIf="article.author"><i class="far fa-user"></i> {{article.author}} | </span><i class="far fa-clock"></i> {{ timeSince(article.publishedAt) }} </p>
     </div>
   </div>
 </div>

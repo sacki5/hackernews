@@ -1,26 +1,21 @@
-/* .card {
-    flex-direction: row;
-}
-
-.card-header {
-    width:83px;
-    border:none;
-} */
-
 
 .card:hover .marker {
-    width:5px;
+    /* width:5px; */
+    height: 100%;
 }
+
 .marker {
-    transition:.3s;
-    width:0;
-    height:100%;
+    transition:.2s ease-out;
+    width:3px;
+    height:0px;
     background:#ff6600;
     position: absolute;
+    bottom:0;
 }
 
 a h5 {
     color:#4f4f4f;
+    display:inline-block;
 }
 
 a:hover , a:hover h5 {

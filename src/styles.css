@@ -5,6 +5,7 @@
 body {
     background-color: #ebe9e6;
     font-family: 'Catamaran', Helvetica, sans-serif;
+    padding-top:50px;
 }
 
 .btn-primary, .page-item.active .page-link {
