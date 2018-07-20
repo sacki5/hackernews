@@ -22,3 +22,8 @@ a:hover , a:hover h5 {
     color:#ff6600;
     text-decoration: none;
 }
+
+a:visited h5 {
+    color:#973c00;
+    text-decoration: none;
+}
