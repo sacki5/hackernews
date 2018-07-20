@@ -1,6 +1,5 @@
 
 .card:hover .marker {
-    /* width:5px; */
     height: 100%;
 }
 
@@ -15,7 +14,6 @@
 
 a h5 {
     color:#4f4f4f;
-    display:inline-block;
 }
 
 a:hover , a:hover h5 {
