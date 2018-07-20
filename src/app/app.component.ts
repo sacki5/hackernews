@@ -19,7 +19,7 @@ import {
         transform: 'translateX(0)'
       })),
       state('hide',   style({
-        transform: 'translateX(100%)'
+        transform: 'translateX(100%)',
         opacity: 0
       })),
 
