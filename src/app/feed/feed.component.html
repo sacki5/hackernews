@@ -1,8 +1,8 @@
 <nav class="navbar navbar-light mt-3 mb-1 pt-2 p-0">
   <div class="container">
     <form (ngSubmit)="search(searchForm.form)" #searchForm="ngForm" class="form-inline mb-1">  
-      <input [ngModel] name="query" type="text" class="form-control mr-2" placeholder="search ...">
-      <button type="submit" class="btn btn-primary">Search</button>
+      <input [ngModel] id="search" name="query" type="text" class="form-control" placeholder="search ...">
+      <button id="search-btn" type="submit" class="btn btn-primary">Search</button>
     </form>
 
     
