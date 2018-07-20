@@ -4,8 +4,6 @@
       <input [ngModel] id="search" name="query" type="text" class="form-control" placeholder="search ...">
       <button id="search-btn" type="submit" class="btn btn-primary">Search</button>
     </form>
-
-    
     <span class="ml-auto mr-2">{{collectionSize}} records</span> 
     <ngb-pagination class="mb-1" [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" aria-label="Default pagination" (pageChange)="getNews()"></ngb-pagination>
   </div>  

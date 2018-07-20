@@ -8,11 +8,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './feed.component.html',
   styleUrls: ['./feed.component.css']
 })
+
 export class FeedComponent implements OnInit {
   articles;
   pageSize = 15;
   page = 1;
-  public query = '';
+  query = '';
   collectionSize;
 
   constructor(private newsService: NewsService) { }
@@ -35,9 +36,8 @@ export class FeedComponent implements OnInit {
   }
 
   timeSince(date) {
-    return moment(date).fromNow();        // 10 hours ago
+    return moment(date).fromNow();
   }
-
 
   ngOnInit() {
     this.getNews();

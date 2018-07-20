@@ -40,6 +40,7 @@ import {
     ])
   ]
 })
+
 export class AppComponent {
   title = 'Hackernews';
   state = 'hide';
